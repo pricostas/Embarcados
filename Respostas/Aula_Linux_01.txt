@@ -37,20 +37,3 @@ Botão para cima ou para baixo para percorrer as instruções do terminal.
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. R: sed
 (s) Conferir se dois arquivos são iguais. R: cmp
 (t) Escrever algo na tela.
-
-
-anotações: 
-	ls -l
-	ls -la (mostra arquivos ocultos)
-	chmod: muda permissão do arquivo. Número de 9bits
-	| pipe: "joga por um túnel"
-	; : sequência
-	ctrl+r : busca no histórico de instruções
-    - metacaracteres: vai além daquele caractere. Generalização
-	* : string
-	? : caractere isolado
-top: gerenciador de programas
-less: abre as informações em outro arquivo e nao deixa o terminal com lixo. sair q
-kill: mata processo com o PID (identificador do processo)
-nice: prioridade de escalonamento -> quem executa com mais frequência.
-sed: substitui
