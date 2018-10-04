@@ -1,6 +1,7 @@
 Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 1. Crie um "Olá mundo!" em C.
+```C
     #include <stdio.h>
     
      int main(int argc, const char *argv[])
@@ -8,13 +9,15 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
              printf("Ola Mundo! \n"); 
              return 0;
      }
+``` 
 
 2. Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 	$ ./ola_usuario_1
 	$ Digite o seu nome: Eu
 	$ Ola Eu
 
-    #include <stdio.h>
+```C
+#include <stdio.h>
     #include <stdlib.h>
 
     char name[20];
@@ -25,7 +28,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
         scanf("%s", name);
         printf("Olá %s \n", name);
         return 0;
-    }
+    }``` 
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 	(a) Se o usuário insere mais de um nome.
@@ -75,6 +78,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$
 
     código:
+    ```C
     #include <stdio.h>
     #include <stdlib.h>
     
@@ -82,7 +86,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
     {
             printf("Ola %s \n", argv[argc - 1]);
             return 0;
-    }
+    }```
     
     terminal:
     gcc argumento_ent.c -o argumento
@@ -136,6 +140,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$
 
     código:
+    ```C
     #include <stdio.h>
     #include <stdlib.h>
     
@@ -144,7 +149,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
             printf("Ola %s \n", argv[1]);
                 printf("Numero de entradas = %d \n", argc);
                     return 0;
-    }
+    }```
 
     terminal:
     gcc valores.c -o valores
@@ -159,7 +164,8 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$ ./ola_argumentos Eu Mesmo e Minha Pessoa
 	$ Argumentos: Eu Mesmo e Minha Pessoa
 	$
-    codigo:
+    
+    ```C
 #include <stdio.h>
 #include <stdlib.h>
     int i;
@@ -172,16 +178,14 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
                 }
             printf("\n");
             return 0;
-    }
+    }```
 
-8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo:
-
-	int Num_Caracs(char *string);
-
+8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo: int Num_Caracs(char *string);
 Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
 
     questao8.c(main):
 
+```C
     #include <stdio.h>
     #include "num_caracs.h"
     
@@ -191,10 +195,11 @@ Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um 
     {
             printf("O tamanho da string e: %d", Num_Caracs(nome));
             return 0;
-    }
+    }```
 
     Num_Caracs.c
 
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include "num_caracs.h"
@@ -213,13 +218,13 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-}
+}```
 
     num_caracs.h
 
-    // Arquivo num_caracs.h
+```C    // Arquivo num_caracs.h
 
-    int Num_Caracs(char *nome);)
+    int Num_Caracs(char *nome);)```
 
     terminal:
 
@@ -238,7 +243,7 @@ int Num_Caracs(char *nome){
 
     questao9.c (main)
     
-    #include <stdio.h>
+```C
     #include <stdlib.h>
     #include "num_caracs.h"
     
@@ -250,10 +255,11 @@ int Num_Caracs(char *nome){
                    i++;
     }
     return 0;
-    }
+    }```
 
         Num_Caracs.c
 
+```C
     #include <stdio.h>
     #include <stdlib.h>
     #include "num_caracs.h"
@@ -272,13 +278,13 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-    }
+    }```
 
     num_caracs.h
 
-    // Arquivo num_caracs.h
+```C    // Arquivo num_caracs.h
 
-    int Num_Caracs(char *nome);)
+    int Num_Caracs(char *nome);)```
 
     terminal:
 
@@ -310,7 +316,8 @@ int Num_Caracs(char *nome){
 	$
 
     questao11.c (main):
-    
+
+```C
     #include <stdio.h>
     #include <stdlib.h>
     #include "num_caracs.h"
@@ -326,10 +333,11 @@ int Num_Caracs(char *nome){
             }
         printf("Total de caracteres de entrada: %d", total);
         return 0;
-    }
+    }```
 
     Num_Caracs.c:
 
+```C
     #include <stdio.h>
     #include <stdlib.h>
     #include "num_caracs.h"
@@ -348,13 +356,13 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-    }
+    }```
 
     num_caracs.h:
 
     // Arquivo num_caracs.h
 
-    int Num_Caracs(char *nome);)
+ ```C   int Num_Caracs(char *nome);)```
 
     terminal:
 
