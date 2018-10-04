@@ -29,7 +29,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
         printf("Olá %s \n", name);
         return 0;
     }
-    ``` 
+``` 
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 	(a) Se o usuário insere mais de um nome.
@@ -79,7 +79,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$
 
     código:
-    ```C
+ ```C
     #include <stdio.h>
     #include <stdlib.h>
     
@@ -88,7 +88,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
             printf("Ola %s \n", argv[argc - 1]);
             return 0;
     }
-    ```
+```
     
     terminal:
     gcc argumento_ent.c -o argumento
@@ -142,7 +142,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$
 
     código:
-    ```C
+```C
     #include <stdio.h>
     #include <stdlib.h>
     
@@ -152,7 +152,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
                 printf("Numero de entradas = %d \n", argc);
                     return 0;
     }
-    ```
+```
 
     terminal:
     gcc valores.c -o valores
@@ -168,7 +168,7 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 	$ Argumentos: Eu Mesmo e Minha Pessoa
 	$
     
-    ```C
+```C
 #include <stdio.h>
 #include <stdlib.h>
     int i;
@@ -181,7 +181,8 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
                 }
             printf("\n");
             return 0;
-    }```
+    }
+```
 
 8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo: int Num_Caracs(char *string);
 Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
@@ -198,7 +199,8 @@ Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um 
     {
             printf("O tamanho da string e: %d", Num_Caracs(nome));
             return 0;
-    }```
+    }
+```
 
     Num_Caracs.c
 
@@ -221,13 +223,16 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-}```
+}
+```
 
     num_caracs.h
 
-```C    // Arquivo num_caracs.h
+```C
+// Arquivo num_caracs.h
 
-    int Num_Caracs(char *nome);)```
+    int Num_Caracs(char *nome);)
+```
 
     terminal:
 
@@ -258,7 +263,8 @@ int Num_Caracs(char *nome){
                    i++;
     }
     return 0;
-    }```
+    }
+```
 
         Num_Caracs.c
 
@@ -281,13 +287,15 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-    }```
+    }
+```
 
     num_caracs.h
 
 ```C    // Arquivo num_caracs.h
 
-    int Num_Caracs(char *nome);)```
+    int Num_Caracs(char *nome);)
+```
 
     terminal:
 
@@ -336,7 +344,8 @@ int Num_Caracs(char *nome){
             }
         printf("Total de caracteres de entrada: %d", total);
         return 0;
-    }```
+    }
+```
 
     Num_Caracs.c:
 
@@ -359,7 +368,8 @@ int Num_Caracs(char *nome){
          i++;
     }
     return tamanho_da_string;
-    }```
+    }
+```
 
     num_caracs.h:
 
