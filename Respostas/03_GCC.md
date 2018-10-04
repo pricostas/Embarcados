@@ -28,7 +28,8 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
         scanf("%s", name);
         printf("Olá %s \n", name);
         return 0;
-    }``` 
+    }
+    ``` 
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 	(a) Se o usuário insere mais de um nome.
@@ -86,7 +87,8 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
     {
             printf("Ola %s \n", argv[argc - 1]);
             return 0;
-    }```
+    }
+    ```
     
     terminal:
     gcc argumento_ent.c -o argumento
@@ -149,7 +151,8 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
             printf("Ola %s \n", argv[1]);
                 printf("Numero de entradas = %d \n", argc);
                     return 0;
-    }```
+    }
+    ```
 
     terminal:
     gcc valores.c -o valores
