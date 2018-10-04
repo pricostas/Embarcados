@@ -1,5 +1,3 @@
-                Questionário 02 - Prática
-
 
     1. Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
 
@@ -22,8 +20,7 @@
 
     5. Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos
 
-        cal 7 2017; cal 7 2016; cal 7 2015; cal 7 2014; cal 7 2013; cal 7 2012;
-        cal 7 2011; cal 7 2010; cal 7 2009; cal 7 2008; cal 7 2007;
+	------
 
     6. Liste somente os arquivos com extensão .txt.
 
